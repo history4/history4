@@ -1,0 +1,17 @@
+{
+  "name": "History",
+  "short_name": "History",
+  "description": "History est de retour avec History4 !",
+  "icons": [
+    {
+      "sizes": "512x512",
+      "type": "image/png",
+      "src": "https://cdn.glitch.com/81aa0e2d-f254-41a3-9116-b6feb95ce008%2FHistory4%20Logo.png?v=1594573813043"
+    }
+  ],
+  "display": "minimal-ui",
+  "lang": "French",
+  "background_color": "black",
+  "theme_color": "black",
+  "start_url": "/index.html"
+}
