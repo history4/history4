@@ -16,7 +16,7 @@ self.addEventListener("message", (event) => {
 self.addEventListener('install', async (event) => {
   event.waitUntil(
     caches.open(CACHE)
-      .then((cache) => cache.addAll([offlineFallbackPage,"https://cdn.glitch.com/81aa0e2d-f254-41a3-9116-b6feb95ce008%2FHistory4%20Logo.png?v=1594573813043","https://cdn.glitch.com/81aa0e2d-f254-41a3-9116-b6feb95ce008%2FEnter%20History.jpg?v=1594571867622"]))
+      .then((cache) => cache.addAll([offlineFallbackPage,"https://github.com/history4/history4/blob/master/History4%20Logo.png?raw=true","https://raw.githubusercontent.com/history4/history4/master/Enter%20History.jpg"]))
   );
 });
 
