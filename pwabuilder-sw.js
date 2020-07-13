@@ -16,7 +16,7 @@ self.addEventListener("message", (event) => {
 self.addEventListener('install', async (event) => {
   event.waitUntil(
     caches.open(CACHE)
-      .then((cache) => cache.add(offlineFallbackPage))
+      .then((cache) => cache.addAll([offlineFallbackPage,"https://raw.githubusercontent.com/history4/history4/master/History4%20Logo.png","https://raw.githubusercontent.com/history4/history4/master/Enter%20History.jpg"]))
   );
 });
 
