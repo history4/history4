@@ -5,7 +5,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox
 const CACHE = "pwabuilder-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
-const offlineFallbackPage = "offline.html";
+const offlineFallbackPage = "https://history4.github.io/offline";
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
@@ -16,7 +16,7 @@ self.addEventListener("message", (event) => {
 self.addEventListener('install', async (event) => {
   event.waitUntil(
     caches.open(CACHE)
-      .then((cache) => cache.add[(offlineFallbackPage, "https://raw.githubusercontent.com/history4/history4/master/History4%20Logo.png","https://raw.githubusercontent.com/history4/history4/master/Enter%20History.jpg)])
+      .then((cache) => cache.add(offlineFallbackPage))
   );
 });
 
